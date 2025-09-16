@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tushar Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    emailjs.init("_SMKULMkKjlDexTnZ"); // Replace with your Public Key from EmailJS
+  })();
+</script>
+
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar" data-aos="fade-down" data-aos-duration="1000">
+  <div class="logo">Tushar Srivastava</div>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="toggle-theme" id="toggle-theme">🌙</button>
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+</header>
+
+<!-- Hero -->
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span class="highlight">Tushar Srivastava</span></h1>
+    <h2><span id="typed"></span></h2>
+    <p>I build modern and scalable web solutions.</p>
+   <div class="hero-buttons">
+  <a href="https://www.linkedin.com/in/tushar-srivastava-894b31309" target="_blank" class="btn">LinkedIn</a>
+  <a href="https://github.com/yourusername" target="_blank" class="btn">GitHub</a>
+  <a href="cv.pdf" target="_blank" class="btn cv-btn">Download CV</a>
+</div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-image" data-aos="fade-right">
+      <img src="images/profile.jpg" alt="Tushar Profile">
+    </div>
+    <div class="about-content" data-aos="fade-left">
+      <p>
+        Experienced Desktop Support Engineer with a strong foundation in IT
+        infrastructure and end- user support. Currently expanding expertise in Linux
+        system administration, SQL database management, and Amazon Web Services
+        (AWS) to transition into cloud and DevOps roles. Committed to continuous
+        learning and leveraging hands-on experience to contribute to scalable and
+        secure IT environments.
+      </p>
+      <ul class="about-info">
+        <li><strong>Experience:</strong> 2+ Years</li>
+        <li><strong>Education:</strong> Bachelor's in Computer Application</li>
+        <li><strong>Location:</strong> India</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills" data-aos="fade-up">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-header"><img src="images/linux.png" class="skill-icon" alt="HTML"><h3>LINUX</h3></div>
+      <div class="skill-bar"><div class="skill-progress" style="width:90%">90%</div></div>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-header"><img src="images/b_scripting.png" class="skill-icon" alt="CSS"><h3>BASH SCRIPTING</h3></div>
+      <div class="skill-bar"><div class="skill-progress" style="width:85%">85%</div></div>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-header"><img src="images/aws.png" class="skill-icon" alt="JavaScript"><h3>AWS</h3></div>
+      <div class="skill-bar"><div class="skill-progress" style="width:80%">80%</div></div>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="skill-header"><img src="images/git-github.png" class="skill-icon" alt="AWS"><h3>GIT & GITHUB</h3></div>
+      <div class="skill-bar"><div class="skill-progress" style="width:75%">75%</div></div>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="skill-header"><img src="images/ci-cd_pipeline.png" class="skill-icon" alt="DevOps"><h3>CI/CD PIPELINE</h3></div>
+      <div class="skill-bar"><div class="skill-progress" style="width:70%">70%</div></div>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+      <div class="skill-header"><img src="images/docker.png" class="skill-icon" alt="React"><h3>DOCKER</h3></div>
+      <div class="skill-bar"><div class="skill-progress" style="width:65%">65%</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects" data-aos="fade-up">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio built with HTML, CSS, and JS.</p>
+      <div class="overlay-buttons">
+        <a href="#" target="_blank" class="btn-overlay">Live Demo</a>
+        <a href="#" target="_blank" class="btn-overlay">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>AWS Automation</h3>
+      <p>Cloud automation using AWS Lambda & DynamoDB.</p>
+      <div class="overlay-buttons">
+        <a href="#" target="_blank" class="btn-overlay">Live Demo</a>
+        <a href="#" target="_blank" class="btn-overlay">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+      <h3>React Dashboard</h3>
+      <p>Interactive dashboard with charts and dynamic content.</p>
+      <div class="overlay-buttons">
+        <a href="#" target="_blank" class="btn-overlay">Live Demo</a>
+        <a href="#" target="_blank" class="btn-overlay">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+      <h3>DevOps CI/CD</h3>
+      <p>Continuous integration & deployment pipeline setup with Jenkins.</p>
+      <div class="overlay-buttons">
+        <a href="#" target="_blank" class="btn-overlay">Live Demo</a>
+        <a href="#" target="_blank" class="btn-overlay">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="form-msg" class="form-msg"></p>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer" data-aos="fade-up">
+  <p>&copy; 2025 Tushar Srivastava. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration:1000, once:true });
+</script>
+</body>
+</html>
