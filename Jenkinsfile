@@ -13,7 +13,7 @@ pipeline{
             }
             stage('Push'){
                 steps{
-                    docker push myportfolio
+                    sh 'docker push myportfolio'
                 }
             }
         }
